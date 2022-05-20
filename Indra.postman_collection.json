@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "7c31c279-8cee-4437-9f3a-15d31c22e67e",
+		"name": "Indra",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/multiplicacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"multiplicacion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"multiplicando\": 32,\r\n    \"multiplicador\": 3,\r\n    \"producto\": 96\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/multiplicacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"multiplicacion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Multiplicar WebService",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/multiplicacion/56789543216789955/1234567785243",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"multiplicacion",
+						"56789543216789955",
+						"1234567785243"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Multiplicaciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/multiplicacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"multiplicacion"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
